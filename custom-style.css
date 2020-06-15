@@ -141,7 +141,24 @@ form {
 }
 
 .input-group-btn { 
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* +/i increment buttons */
+#down.btn.btn-default, #up.btn.btn-default { 
+    background-color: white;
     border: none;
+    border-radius: 15px;
+}
+
+/* number between the +/- increment buttons */
+#myNumber.form-control.input-number { 
+    background-color: rgb(160, 199, 180);
+    color: white;
+    border: none;
+    width: 20px;
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -162,7 +179,7 @@ form {
     width: 425px;
     height: 550px;
     overflow-y: scroll;
-    border-radius: 10px;
+    border-radius: 3px;
     left: 50%; 
     top: 50%;
     margin-left: -225px;
