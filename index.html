@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="custom-style.css">
+    <title>Custom Item Pop-Up</title>
+</head>
+<body>
+    <button class="order-now" onclick="openPopupMenu()"> 
+        Order Now
+    </button>
+
+    <div id="popup-bg">
+        <div class="popup-main">
+
+            <div class="header-container">
+            <div class="header">
+                <div class="item-header">Coffee</div>
+                <div class="close-popup" title="Close" onclick="closePopupMenu()"> x </div>
+            </div>
+        </div>
+
+            <div class="item-image">
+                <img src="beans.jpeg" width="400px">
+            </div>
+
+            <div class="category">
+                <p>Size</p>
+                <p>Please pick one</p>
+            </div>
+            <div class="options">
+                <form action="#">
+                    <input type="radio" id="small" name="size" value="small">
+                    <label for="small">Small</label><br>
+                    <input type="radio" id="medium" name="size" value="medium">
+                    <label for="medium">Medium</label><br>
+                    <input type="radio" id="large" name="size" value="large">
+                    <label for="large">Large</label>
+                </form>
+            </div>
+
+            <div class="category">Milk</div>
+            <div class="options">
+                <form action="#">
+                    <input type="checkbox" id="whole" name="milk" value="whole-milk">
+                    <label for="whole-milk">Whole Milk</label><br>
+                    <input type="checkbox" id="skim" name="milk" value="skim-milk">
+                    <label for="skim-milk">Skim Milk</label><br>
+                    <input type="checkbox" id="oat" name="milk" value="oat-milk">
+                    <label for="oat-milk">Oat Milk</label><br>
+                    <input type="checkbox" id="almond" name="milk" value="almond-milk">
+                    <label for="almond-milk">Almond Milk</label><br>
+                </form>
+            </div>
+
+            <div class="quantity-container">
+                <div class="form-group">
+                    <div class="category-quantity">Quantity
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button id="down" class="btn btn-default" onclick=" down('0')"> - </button>
+                        </div>
+                        <input type="text" id="myNumber" class="form-control input-number" value="1" />
+                        <div class="input-group-btn">
+                            <button id="up" class="btn btn-default" onclick="up('10')">+ </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div> 
+
+            <button class="add-button">
+                <div class="add-cart">Add to cart</div>
+                <div class="add-total">Total</div>
+            </button>
+
+        </div>
+
+    </div>
+
+<script src="custom-item.js"></script>
+</body>
+</html>
