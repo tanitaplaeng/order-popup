@@ -126,12 +126,12 @@ form {
 
 .option-row {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
 }
 
 .quantity-container { 
-    padding-bottom: 70px;
+    padding-bottom: 75px;
     
 }
 
@@ -186,7 +186,7 @@ form {
 /* main custom item menu  */
 .popup-main { 
     background-color: white;
-    position: absolute;
+    position: relative;
     width: 425px;
     height: 550px;
     overflow-y: scroll;
@@ -200,18 +200,27 @@ form {
 
 /* menu item header and close popup */
 .header { 
-    width: 50%;
     padding: 15px 30px;
     cursor: pointer;
     font-size: 18px;
+    position: relative;
+}
+
+.header-container { 
+    position: relative;
 }
 
 /* click button to add item to cart  */
 .add-button { 
-    width: 50%;
+    width: 100%;
     padding: 15px 30px;
     cursor: pointer;
     font-size: 18px;
+    position: relative;
+}
+
+.quantity-container { 
+    padding-bottom: 25px;
 }
 
 
