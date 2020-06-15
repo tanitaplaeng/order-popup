@@ -92,18 +92,18 @@ p {
     bottom: 0;
 }
 
-/* .item-container { 
+.item-container { 
     display: flex; 
     justify-content: center;
     align-items: center;
 
-} */
+}
 
 .item-image { 
-    text-align: center;
+    /* text-align: center; */
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 75%;
+    width: 100%;
     height: auto;
 }
 
@@ -114,7 +114,7 @@ p {
     padding: 10px 15px;
 }
 
-/* adds space inbetween input radio and checkout buttons */
+/* adds space in-between input radio and checkout buttons */
 form { 
     padding: 15px;
     line-height: 30px;
@@ -167,7 +167,7 @@ form {
     position: absolute;
     /* top: 0;
     left: 0; */
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100vh;
 } 
